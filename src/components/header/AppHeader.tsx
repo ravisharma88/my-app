@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Group, useMantineColorScheme, ActionIcon } from '@mantine/core';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
-import { useStyles } from "./HeaderStyles";
+import { useStyles } from "./style/HeaderStyles";
 import { links } from "./HeaderLinks";
 import BurgerMenu from "./BurgerMenu";
 
