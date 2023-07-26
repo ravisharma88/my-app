@@ -7,16 +7,18 @@ export default function BurgerMenu() {
     const [opened, { toggle }] = useDisclosure(false);
     const items = links.map((item) => 
         <Menu.Item
+            key={item.label}
             component="a"
             href={item.link}
         >
             {item.label}
         </Menu.Item>
     );
+
     return (
-        <Menu width={200} shadow="md">
+        <Menu width={200} shadow="md" opened={opened}>
             <Menu.Target>
-            <Burger opened={opened} onClick={toggle} size="sm" />
+                <Burger opened={opened} onClick={toggle} size="sm" />
             </Menu.Target>
 
             <Menu.Dropdown>

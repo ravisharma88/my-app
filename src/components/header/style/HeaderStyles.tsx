@@ -26,7 +26,7 @@ export const useStyles = createStyles((theme) => ({
     },
 
     burger: {
-        [theme.fn.largerThan('xs')]: {
+        [theme.fn.largerThan('md')]: {
             display: 'none',
         },
     },
